@@ -130,3 +130,59 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+/* ===== Estilo das seções com classe ===== */
+.secao {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.secao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* ===== Redes sociais do footer ===== */
+footer .social {
+  margin: 15px 0;
+}
+
+footer .social a {
+  margin: 0 8px;
+  font-weight: 500;
+}
+
+footer .social a:hover {
+  color: #fff;
+}
+
+/* ===== Suavização geral ===== */
+section h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* ===== Botão do header no mobile ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .secao {
+    padding: 20px;
+  }
+}
