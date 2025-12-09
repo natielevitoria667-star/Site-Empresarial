@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>VITRIX</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>VITRIX</h1>
+      <h3>Inovação que transforma negócios</h3>
+      <button onclick="location.href='#contato'">
+        Solicite uma demonstração
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="#sobre-nos">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre-nos">
+        <h3>💡 Sobre Nós</h3>
+        <p>
+          Somos uma empresa focada em criar experiências digitais que realmente
+          funcionam. Do frontend elegante ao backend robusto, a gente transforma
+          ideias em produtos que brilham na web. Não enrolamos — construímos,
+          iteramos e entregamos soluções que fazem diferença. Se dá pra
+          imaginar, dá pra programar.
+        </p>
+      </section>
+
+      <section id="servicos">
+        <h3>⚙️ Serviços</h3>
+        <ul>
+          <li>Desenvolvimento Web</li>
+          <li>Desenvolvimento de Aplicativos</li>
+          <li>Banco de Dados</li>
+        </ul>
+      </section>
+
+      <section id="equipe">
+        <h3>👥 Equipe</h3>
+        <p>CEO: Vitória – especialista em inovação tecnológica.</p>
+        <p>
+          Desenvolvedora: Laryssa Paiva – especialista em inovação tecnológica.
+        </p>
+        <p>
+          Desenvolvedora: Cintia Pereira – especialista em inovação tecnológica.
+        </p>
+      </section>
+
+      <section id="contato">
+        <h3>📞 Contato</h3>
+        <p>Telefone: +55 (31) 3333-4444</p>
+        <p>E-mail: contato@technova.com</p>
+      </section>
+
+      <section>
+        <h3>Formulário de Contato</h3>
+        <form action="enviar.php" method="POST">
+          <input type="text" name="nome" placeholder="Seu nome" required/><br /><br />
+          <input type="email" name="email" placeholder="Seu email" required/><br /><br />
+          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea><br /><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h3>🌍 Rodapé</h3>
+      <a href="#servicos">Serviços</a> |
+      <a href="#contato">Contato</a>
+      <p>© 2025 TechNova Solutions – Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
