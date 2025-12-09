@@ -2,7 +2,18 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="VITRIX — inovação que transforma negócios através de tecnologia, desenvolvimento web, apps, IA e soluções digitais modernas."/>
+
+    <meta
+      name="description"
+      content="VITRIX — inovação que transforma negócios através de tecnologia, desenvolvimento web, apps, IA e soluções digitais modernas."
+    />
+    <meta name="keywords" content="Vitrix, tecnologia, desenvolvimento web, apps, IA, inovação" />
+    <meta property="og:title" content="VITRIX — Inovação que transforma negócios" />
+    <meta property="og:description" content="Tecnologia, desenvolvimento web, apps e IA para empresas modernas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vitrix.com" />
+    <meta property="og:image" content="https://vitrix.com/logo.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>VITRIX</title>
@@ -12,14 +23,13 @@
     <header>
       <h1>VITRIX</h1>
       <h3>Inovação que transforma negócios</h3>
-      <button onclick="location.href='#contato'">
-        Solicite uma demonstração
-      </button>
+      <button onclick="location.href='#contato'">Solicite uma demonstração</button>
 
       <nav>
         <ul>
           <li><a href="#sobre-nos">Sobre Nós</a></li>
           <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
           <li><a href="#equipe">Equipe</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -30,33 +40,32 @@
       <section id="sobre-nos" class="secao">
         <h3>💡 Sobre Nós</h3>
         <p>
-          Somos uma empresa focada em criar experiências digitais que realmente
-          funcionam. Do frontend elegante ao backend robusto, a gente transforma
-          ideias em produtos que brilham na web. Não enrolamos, construímos,
-          iteramos e entregamos soluções que fazem diferença. Se dá pra imaginar,
-          dá pra programar.
+          Somos uma empresa focada em criar experiências digitais que realmente funcionam.
+          Do frontend elegante ao backend robusto, transformamos ideias em produtos que brilham na web.
+          Se dá pra imaginar, dá pra programar.
         </p>
       </section>
 
+      <!-- ===== SERVIÇOS ===== -->
       <section id="servicos" class="secao">
         <h3>⚙️ Serviços</h3>
-        <ul>
-          <li>Desenvolvimento Web</li>
-          <li>Desenvolvimento de Aplicativos</li>
-          <li>Banco de Dados</li>
-          <li>Inteligência Artificial (IA)</li>
-        </ul>
+
+        <div class="rotativo">
+          <img id="servicoImg" src="" alt="Serviço" />
+          <h4 id="servicoNome"></h4>
+          <p id="servicoDesc"></p>
+        </div>
       </section>
 
+      <!-- ===== TECNOLOGIAS ===== -->
       <section id="tecnologias" class="secao">
         <h3>🛠️ Tecnologias</h3>
-        <ul>
-          <li>HTML e CSS</li>
-          <li>MySQL</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-        </ul>
+
+        <div class="rotativo">
+          <img id="techImg" src="" alt="Tecnologia" />
+          <h4 id="techNome"></h4>
+          <p id="techDesc"></p>
+        </div>
       </section>
 
       <section id="equipe" class="secao">
@@ -84,10 +93,17 @@
 
       <section class="secao">
         <h3>Formulário de Contato</h3>
+
         <form action="enviar.php" method="POST">
-          <input type="text" name="nome" placeholder="Seu nome" required /><br /><br />
-          <input type="email" name="email" placeholder="Seu email" required /><br /><br />
-          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea><br /><br />
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
           <button type="submit">Enviar</button>
         </form>
       </section>
@@ -95,6 +111,7 @@
 
     <footer>
       <h3>🌍 Rodapé</h3>
+
       <a href="#servicos">Serviços</a> |
       <a href="#contato">Contato</a>
 
